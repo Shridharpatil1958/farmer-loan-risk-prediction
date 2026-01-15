@@ -2,6 +2,14 @@
 
 A modern, responsive web application for predicting farm loan risk categories using AI/ML. This is a complete HTML/CSS/JavaScript conversion of your Streamlit project.
 
+<img width="1920" height="925" alt="Screenshot 2026-01-15 144649" src="https://github.com/user-attachments/assets/69bafad4-0cdc-4694-9343-799a487b39e2" />
+<img width="1919" height="922" alt="Screenshot 2026-01-15 144809" src="https://github.com/user-attachments/assets/cab4eda8-ca2b-4e30-acaa-2407d40b3351" />
+<img width="1920" height="931" alt="Screenshot 2026-01-15 144825" src="https://github.com/user-attachments/assets/c80da96a-d91c-4a96-a1a6-d6ffccb477ee" />
+<img width="1920" height="930" alt="Screenshot 2026-01-15 144835" src="https://github.com/user-attachments/assets/57c43d73-f77a-452a-8364-7f6d3b3165fa" />
+<img width="1920" height="928" alt="Screenshot 2026-01-15 144849" src="https://github.com/user-attachments/assets/6fd45afc-d85f-4e51-aa18-2a0cb3a72f04" />
+<img width="1920" height="927" alt="Screenshot 2026-01-15 144950" src="https://github.com/user-attachments/assets/db267357-f37c-42c1-a509-27043eb3ef80" />
+<img width="1920" height="925" alt="Screenshot 2026-01-15 145010" src="https://github.com/user-attachments/assets/3359a84e-c84c-48b1-afa1-38a5013d33b4" />
+
 ## 📋 Features
 
 - **🏠 Home Page**: Welcome page with feature highlights and technology stack
@@ -234,5 +242,6 @@ For questions or issues:
 ---
 
 **Built with ❤️ for farmers and financial institutions**
+
 
 Enjoy your new web application! 🌾
