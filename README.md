@@ -1,4 +1,4 @@
-# 🌾 Farm Loan Risk Predictor - HTML/CSS/JS Version
+# 🌾 Farm Loan Risk Predictor
 
 A modern, responsive web application for predicting farm loan risk categories using AI/ML. This is a complete HTML/CSS/JavaScript conversion of your Streamlit project.
 
@@ -245,3 +245,4 @@ For questions or issues:
 
 
 Enjoy your new web application! 🌾
+
