@@ -4,6 +4,7 @@ A modern, responsive web application for predicting farm loan risk categories us
 
 🏠 Home Dashboard
 Overview of the AI-Powered Farm Loan Risk Prediction System
+
 A centralized dashboard highlighting key features such as real-time predictions, interactive visualizations, historical tracking, and agricultural market analysis.
 <img width="1920" height="925" alt="Screenshot 2026-01-15 144649" src="https://github.com/user-attachments/assets/69bafad4-0cdc-4694-9343-799a487b39e2" />
 
@@ -274,6 +275,7 @@ For questions or issues:
 
 
 Enjoy your new web application! 🌾
+
 
 
 
