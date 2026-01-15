@@ -9,32 +9,32 @@ Overview of the AI-Powered Farm Loan Risk Prediction System
 
 🧾 Loan Risk Prediction Form
 Farmer Loan Risk Prediction Interface
-Users can enter farmer details including age, land size, income, crop type, rainfall, loan amount, and past defaults to predict loan risk using machine learning.
+:- Users can enter farmer details including age, land size, income, crop type, rainfall, loan amount, and past defaults to predict loan risk using machine learning.
 <img width="1919" height="922" alt="Screenshot 2026-01-15 144809" src="https://github.com/user-attachments/assets/cab4eda8-ca2b-4e30-acaa-2407d40b3351" />
 
 🎯 Prediction Result & Confidence Score
 Loan Risk Classification with Confidence Score
-Displays predicted loan risk category (Low, Medium, High) along with model confidence using an intuitive progress bar and gauge visualization.
+:- Displays predicted loan risk category (Low, Medium, High) along with model confidence using an intuitive progress bar and gauge visualization.
 <img width="1920" height="931" alt="Screenshot 2026-01-15 144825" src="https://github.com/user-attachments/assets/c80da96a-d91c-4a96-a1a6-d6ffccb477ee" />
 
 📊 Risk Probability Distribution
 Probability Distribution Across Risk Categories
-Visual breakdown of predicted probabilities for High, Medium, and Low risk classes, helping stakeholders understand model certainty.
+:- Visual breakdown of predicted probabilities for High, Medium, and Low risk classes, helping stakeholders understand model certainty.
 <img width="1920" height="930" alt="Screenshot 2026-01-15 144835" src="https://github.com/user-attachments/assets/57c43d73-f77a-452a-8364-7f6d3b3165fa" />
 
 🔍 Feature Importance Analysis
 Explainable AI – Feature Importance Visualization
-Shows which features (income, loan amount, previous defaults, crop type, etc.) most influence the loan risk prediction, ensuring transparency.
+:- Shows which features (income, loan amount, previous defaults, crop type, etc.) most influence the loan risk prediction, ensuring transparency.
 <img width="1920" height="928" alt="Screenshot 2026-01-15 144849" src="https://github.com/user-attachments/assets/6fd45afc-d85f-4e51-aa18-2a0cb3a72f04" />
 
 📈 Prediction Analytics Dashboard
 Prediction Analytics & Risk Distribution Insights
-Includes risk distribution charts and age vs risk analysis to identify trends across different farmer demographics.
+:- Includes risk distribution charts and age vs risk analysis to identify trends across different farmer demographics.
 <img width="1920" height="927" alt="Screenshot 2026-01-15 144950" src="https://github.com/user-attachments/assets/db267357-f37c-42c1-a509-27043eb3ef80" />
 
 🕒 Prediction History & Export
 Prediction History with CSV Export
-Maintains a log of all past predictions with timestamps and allows users to export data for reporting and auditing.
+:- Maintains a log of all past predictions with timestamps and allows users to export data for reporting and auditing.
 <img width="1920" height="925" alt="Screenshot 2026-01-15 145010" src="https://github.com/user-attachments/assets/3359a84e-c84c-48b1-afa1-38a5013d33b4" />
 
 ## 📋 Features
@@ -274,6 +274,7 @@ For questions or issues:
 
 
 Enjoy your new web application! 🌾
+
 
 
 
