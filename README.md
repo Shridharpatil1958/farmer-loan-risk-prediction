@@ -45,7 +45,9 @@ farm-loan-predictor/
 ├── styles.css                   # Styling and layout
 ├── script.js                    # Application logic and charts
 └── README.md                    # This file
-```
+|___app.py
+|___model_training.py            #Traiing models 
+
 
 ## 🎨 Features Overview
 
@@ -245,4 +247,5 @@ For questions or issues:
 
 
 Enjoy your new web application! 🌾
+
 
