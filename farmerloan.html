@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌾 AI Farm Loan Risk Predictor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="logo">
+            <h2>🌾 Farm Loan</h2>
+            <p>Risk Predictor</p>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active" data-page="home">
+                <span class="nav-icon">🏠</span>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item" data-page="predict">
+                <span class="nav-icon">📊</span>
+                <span>Predict Risk</span>
+            </a>
+            <a href="#" class="nav-item" data-page="insights">
+                <span class="nav-icon">📈</span>
+                <span>Insights</span>
+            </a>
+            <a href="#" class="nav-item" data-page="visuals">
+                <span class="nav-icon">📊</span>
+                <span>Visuals</span>
+            </a>
+            <a href="#" class="nav-item" data-page="history">
+                <span class="nav-icon">📋</span>
+                <span>History</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="hero-section">
+                <h1>🌾 AI-Powered Farm Loan Risk Prediction System</h1>
+                <p class="subtitle">An intelligent platform that estimates loan risk categories (Low, Medium, High) for farmers using advanced machine learning models.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Real-time Predictions</h3>
+                    <p>Get instant loan risk assessments with confidence scores</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Interactive Visualizations</h3>
+                    <p>Explore data through dynamic charts and graphs</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📋</div>
+                    <h3>Historical Tracking</h3>
+                    <p>View and export prediction history with ease</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Market Analysis</h3>
+                    <p>Track trends and insights by crop type</p>
+                </div>
+            </div>
+
+            <div class="tech-stack">
+                <h2>🛠️ Technology Stack</h2>
+                <div class="tech-items">
+                    <div class="tech-item">
+                        <strong>Frontend:</strong> HTML5, CSS3, JavaScript + Plotly
+                    </div>
+                    <div class="tech-item">
+                        <strong>Backend:</strong> Python, Scikit-learn (Random Forest, SVM)
+                    </div>
+                    <div class="tech-item">
+                        <strong>Data:</strong> 500+ farmer records (2020-2025)
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <button class="cta-button" onclick="navigateTo('predict')">
+                    🚀 Start Predicting Now
+                </button>
+            </div>
+        </div>
+
+        <!-- Predict Risk Page -->
+        <div id="predict-page" class="page">
+            <h1>🔍 Enter Farmer Details to Predict Loan Risk</h1>
+            
+            <form id="loan-form" class="prediction-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">👤 Farmer Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">👴 Age</label>
+                        <input type="number" id="age" min="18" max="80" value="35" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="land_size">🌾 Land Size (acres)</label>
+                        <input type="number" id="land_size" min="0.1" max="100" step="0.1" value="5.0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="income">💰 Annual Income (₹)</label>
+                        <input type="number" id="income" min="10000" max="1000000" value="200000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loan_amount">🏦 Loan Amount (₹)</label>
+                        <input type="number" id="loan_amount" min="1000" max="1000000" value="50000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="loan_term">📅 Loan Term (months)</label>
+                        <input type="number" id="loan_term" min="3" max="60" value="12" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="crop_type">🌱 Crop Type</label>
+                        <select id="crop_type" required>
+                            <option value="Wheat">Wheat</option>
+                            <option value="Rice">Rice</option>
+                            <option value="Cotton">Cotton</option>
+                            <option value="Sugarcane">Sugarcane</option>
+                            <option value="Maize">Maize</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="soil_type">⛏️ Soil Type</label>
+                        <select id="soil_type" required>
+                            <option value="Sandy">Sandy</option>
+                            <option value="Clay">Clay</option>
+                            <option value="Loamy">Loamy</option>
+                            <option value="Black">Black</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rainfall">🌧️ Rainfall (mm)</label>
+                        <input type="number" id="rainfall" min="0" max="500" value="120" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="previous_defaults">⚠️ Previous Defaults</label>
+                        <input type="number" id="previous_defaults" min="0" max="10" value="0" required>
+                    </div>
+                </div>
+                
+                <button type="submit" class="submit-button">🌾 Predict Risk Now</button>
+            </form>
+
+            <!-- Results Section -->
+            <div id="results-section" class="results-section" style="display: none;">
+                <hr class="divider">
+                
+                <div class="results-header">
+                    <div class="main-result">
+                        <h2 id="risk-label">🎯 Risk Label</h2>
+                        <div class="confidence-bar">
+                            <div id="confidence-fill" class="confidence-fill"></div>
+                        </div>
+                        <p id="confidence-text" class="confidence-text">Confidence: 0%</p>
+                    </div>
+                    <div class="gauge-container">
+                        <div id="gauge-chart"></div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div id="probability-chart"></div>
+                </div>
+
+                <div class="chart-container">
+                    <div id="importance-chart"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Insights Page -->
+        <div id="insights-page" class="page">
+            <h1>🌾 Agricultural Market Insights</h1>
+            
+            <div class="insights-grid">
+                <div class="chart-container half-width">
+                    <div id="crop-risk-chart"></div>
+                </div>
+                <div class="chart-container half-width">
+                    <div id="market-trend-chart"></div>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div id="correlation-heatmap"></div>
+            </div>
+        </div>
+
+        <!-- Visuals Page -->
+        <div id="visuals-page" class="page">
+            <h1>📊 Your Prediction Analytics</h1>
+            
+            <div id="visuals-content">
+                <div class="empty-state">
+                    <div class="empty-icon">📊</div>
+                    <h3>No Data Yet</h3>
+                    <p>Make predictions first to unlock analytics!</p>
+                    <button class="cta-button" onclick="navigateTo('predict')">
+                        Go to Predict Risk
+                    </button>
+                </div>
+            </div>
+
+            <div id="visuals-charts" style="display: none;">
+                <div class="insights-grid">
+                    <div class="chart-container half-width">
+                        <div id="risk-pie-chart"></div>
+                    </div>
+                    <div class="chart-container half-width">
+                        <div id="age-histogram"></div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div id="loan-scatter-chart"></div>
+                </div>
+
+                <div class="table-container">
+                    <h2>📋 Complete History</h2>
+                    <div id="visuals-table"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- History Page -->
+        <div id="history-page" class="page">
+            <h1>🕒 Prediction History</h1>
+            
+            <div id="history-content">
+                <div class="empty-state">
+                    <div class="empty-icon">📝</div>
+                    <h3>No Predictions Yet</h3>
+                    <p>Go to 'Predict Risk' to start!</p>
+                    <button class="cta-button" onclick="navigateTo('predict')">
+                        Start Predicting
+                    </button>
+                </div>
+            </div>
+
+            <div id="history-table-container" style="display: none;">
+                <div class="table-header">
+                    <button id="export-csv" class="export-button">⬇️ Export CSV</button>
+                </div>
+                <div class="table-container">
+                    <table id="history-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Crop</th>
+                                <th>Loan Amount</th>
+                                <th>Predicted Risk</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history-tbody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
